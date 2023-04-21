@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Library Management</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Library Management</h1>
+
+      <!-- Filters -->
+      <div class="filters">
+        <label>Title:</label>
+        <input type="text" id="title-filter" />
+        <label>Author:</label>
+        <input type="text" id="author-filter" />
+        <label>Subject:</label>
+        <input type="text" id="subject-filter" />
+        <label>Publish Date:</label>
+        <input type="date" id="publish-date-filter" />
+        <button id="apply-filters-btn">Apply Filters</button>
+        <button id="clear-filters-btn">Clear Filters</button>
+      </div>
+
+      <!-- Book Counts -->
+      <div class="counts">
+        <p><span id="total-count"></span> books found.</p>
+        <p><span id="title-count"></span> books with matching title.</p>
+        <p><span id="author-count"></span> books with matching author.</p>
+        <p><span id="subject-count"></span> books with matching subject.</p>
+        <p>
+          <span id="publish-date-count"></span> books published on or after
+          selected date.
+        </p>
+      </div>
+
+      <!-- Book List -->
+      <ul class="book-list" id="book-list"></ul>
+
+      <!-- Pagination -->
+      <div class="pagination" id="pagination"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
